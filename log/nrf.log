@@ -1,0 +1,24 @@
+Open5GS daemon v2.6.4-34-gf36fede
+
+07/25 12:30:53.880: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:126)
+07/25 12:30:53.880: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:129)
+07/25 12:30:53.882: [sbi] INFO: nghttp2_server() [http://192.168.100.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+07/25 12:30:53.882: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+Open5GS daemon v2.6.4-34-gf36fede
+
+07/25 12:31:28.209: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:126)
+07/25 12:31:28.209: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:129)
+07/25 12:31:28.210: [sbi] INFO: nghttp2_server() [http://192.168.100.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+07/25 12:31:28.210: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+Open5GS daemon v2.6.4-34-gf36fede
+
+07/25 12:32:01.765: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:126)
+07/25 12:32:01.765: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:129)
+07/25 12:32:01.766: [sbi] INFO: nghttp2_server() [http://192.168.100.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+07/25 12:32:01.766: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+Open5GS daemon v2.6.4-34-gf36fede
+
+07/25 12:33:08.793: [app] INFO: Configuration: '/open5gs/install/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:126)
+07/25 12:33:08.793: [app] INFO: File Logging: '/open5gs/install/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:129)
+07/25 12:33:08.794: [sbi] INFO: nghttp2_server() [http://192.168.100.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+07/25 12:33:08.794: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)

@@ -1,7 +1,6 @@
 BASE_TAG = base-open5gs
-UERANSIM_TAG = ueransim
 MONGO_TAG = open5gs-mongo
-DEPLOYMENT_TAG = compose
+DEPLOYMENT_TAG = amarisoft
 
 PREFIX = registry.gitlab.bsc.es/ppc/software/open5gs/
 
@@ -12,16 +11,12 @@ ARCH_TAG=latest
 #     ARCH_TAG=arm
 # endif
 
-all: openmongo
+all: baseopen
 
 baseopen: 
 	docker build -f base/Dockerfile -t $(PREFIX)$(BASE_TAG)-$(DEPLOYMENT_TAG):$(ARCH_TAG) .
 	docker push $(PREFIX)$(BASE_TAG)-$(DEPLOYMENT_TAG):$(ARCH_TAG)
 
-ueransim: baseopen
-	docker build --progress=plain -f ueransim/Dockerfile -t $(PREFIX)$(UERANSIM_TAG)-$(DEPLOYMENT_TAG):$(ARCH_TAG) . 
-	docker push $(PREFIX)$(UERANSIM_TAG)-$(DEPLOYMENT_TAG):$(ARCH_TAG)
-
-openmongo: ueransim
-	docker build --progress=plain -f mongo/Dockerfile -t $(PREFIX)$(MONGO_TAG):$(ARCH_TAG) . 
-	docker push $(PREFIX)$(MONGO_TAG):$(ARCH_TAG)
+# openmongo: baseopen
+# 	docker build --progress=plain -f mongo/Dockerfile -t $(PREFIX)$(MONGO_TAG):$(ARCH_TAG) . 
+# 	docker push $(PREFIX)$(MONGO_TAG):$(ARCH_TAG)

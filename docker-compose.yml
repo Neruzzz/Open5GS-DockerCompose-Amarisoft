@@ -270,3 +270,27 @@ services:
     networks:
       common_network:
         ipv4_address: ${AMF_IP}
+
+
+
+  nr_ue:
+    image: ${UERANSIM_IMAGE}
+    container_name: nr_ue
+    depends_on:
+      - nr_gnb
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./ueransim:/mnt/ueransim
+    env_file:
+      - .env
+    environment:
+      - COMPONENT_NAME=ueransim-ue-1
+    expose:
+      - "4997/udp"
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    networks:
+      common_network:
+        ipv4_address: ${NR_UE_IP}
